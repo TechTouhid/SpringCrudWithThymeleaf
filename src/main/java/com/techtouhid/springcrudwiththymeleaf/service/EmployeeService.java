@@ -9,4 +9,7 @@ public interface EmployeeService {
 
     // save the data to the database /insert data
     void saveEmployee(Employee employee);
+
+    // find employee by id
+    Employee getEmployeeById(long id);
 }
