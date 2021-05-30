@@ -11,8 +11,15 @@ public class EmployeeServiceImpl implements EmployeeService {
     @Autowired
     private EmployeeRepository employeeRepository;
 
+    // show the data on web
     @Override
     public List<Employee> getAllEmployees() {
         return employeeRepository.findAll();
+    }
+
+    // save the data to the database /insert data
+    @Override
+    public void saveEmployee(Employee employee) {
+        this.employeeRepository.save(employee);
     }
 }

@@ -6,4 +6,7 @@ import java.util.List;
 
 public interface EmployeeService {
     List<Employee> getAllEmployees();
+
+    // save the data to the database /insert data
+    void saveEmployee(Employee employee);
 }
