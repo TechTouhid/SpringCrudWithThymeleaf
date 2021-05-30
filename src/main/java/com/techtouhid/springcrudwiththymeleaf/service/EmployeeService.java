@@ -12,4 +12,7 @@ public interface EmployeeService {
 
     // find employee by id
     Employee getEmployeeById(long id);
+
+    // delete employee by id
+    void deleteEmployeeById(long id);
 }
